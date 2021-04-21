@@ -23,6 +23,7 @@ def rotate(y, x, height, width):
         q.append(arr[i][x])
 
     q.rotate(-r)
+    #rotate 음수면 왼쪽으로 회전, 양수면 오른쪽으로 회전
 
     for i in range(x, x+width):
         arr[y][i] = q.popleft()
